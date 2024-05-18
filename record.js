@@ -22,6 +22,7 @@ function myFunc(event){
     arr.push(data);
     console.log(arr);
     Display(arr);
+    clearForm();
 }
 
 function Display(arr){
@@ -83,6 +84,14 @@ function Display(arr){
         }
     }
 
+    function clearForm() {
+        document.getElementById('name').value = '';
+        document.getElementById('employeeID').value = '';
+        document.getElementById('department').value = '';
+        document.getElementById('exp').value = '';
+        document.getElementById('email').value = '';
+        document.getElementById('mbl').value = '';
+    }
 
 
 
